@@ -1,0 +1,75 @@
+@import 'tailwindcss';
+
+:root {
+  --primary: #ec4899;
+  --primary-dark: #db2777;
+  --primary-light: #fbcfe8;
+  --accent: #fce7f3;
+}
+
+body {
+  background-color: white;
+  color: rgb(17 24 39);
+}
+
+/* Custom button styles with pink theme */
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 200ms;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+.btn-secondary {
+  background-color: white;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 200ms;
+}
+
+.btn-secondary:hover {
+  background-color: var(--accent);
+}
+
+/* Card styles */
+.card {
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  padding: 1.5rem;
+  border: 1px solid rgb(243 244 246);
+}
+
+/* Gradient backgrounds */
+.gradient-pink {
+  background: linear-gradient(to right, var(--primary), var(--primary-dark));
+}
+
+.gradient-light {
+  background: linear-gradient(to right, var(--accent), var(--primary-light));
+}
+
+/* PWA Install animation */
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.3s ease-out;
+}
