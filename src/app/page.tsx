@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { createClient } from '@/lib/supabase/server'
 import HeroImage from '@/components/HeroImage'
 import AboutCarousel from '@/components/AboutCarousel'
+import WorksSection from '@/components/WorksSection'
 
 export default async function Home() {
   const supabase = await createClient()
@@ -92,24 +93,7 @@ export default async function Home() {
       </section>
 
       {/* Works Section */}
-      <section id="works" className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-pink-50 py-20 flex items-center">
-        <div className="container mx-auto px-4 w-full">
-          <h2 className="text-5xl md:text-6xl font-bold text-black mb-12 text-center">Our Works</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[1, 2, 3].map((item) => (
-              <div key={item} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-                <div className="h-64 bg-gradient-to-br from-pink-200 to-pink-100 flex items-center justify-center">
-                  <p className="text-gray-500">Project {item} Image</p>
-                </div>
-                <div className="p-6 space-y-3">
-                  <h3 className="text-xl font-bold text-black">Project {item}</h3>
-                  <p className="text-gray-600">Description of the project and its impact on the community.</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <WorksSection />
 
       {/* Team Section */}
       <section id="team" className="min-h-screen bg-white py-20 flex items-center">

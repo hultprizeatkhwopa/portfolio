@@ -99,41 +99,6 @@ export default function Navbar() {
           ref={menuRef}
           className="fixed right-6 top-20 bg-white shadow-xl rounded-lg border border-gray-200 py-2 min-w-[220px] z-50"
         >
-          <a
-            href="#home"
-            className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-pink-500 text-sm font-medium"
-            onClick={() => setIsOpen(false)}
-          >
-            Home
-          </a>
-          <a
-            href="#about"
-            className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-pink-500 text-sm font-medium"
-            onClick={() => setIsOpen(false)}
-          >
-            About
-          </a>
-          <a
-            href="#works"
-            className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-pink-500 text-sm font-medium"
-            onClick={() => setIsOpen(false)}
-          >
-            Works
-          </a>
-          <a
-            href="#team"
-            className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-pink-500 text-sm font-medium"
-            onClick={() => setIsOpen(false)}
-          >
-            Team
-          </a>
-          <a
-            href="#contact"
-            className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-pink-500 text-sm font-medium"
-            onClick={() => setIsOpen(false)}
-          >
-            Contact
-          </a>
           <Link
             href="/signup"
             className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-pink-500 text-sm font-medium"

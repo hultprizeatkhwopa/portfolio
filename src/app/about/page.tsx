@@ -11,13 +11,13 @@ export default function About() {
       id: 1,
       title: 'We pride in',
       description: 'veniam officia fugiat ea culpa aute occaecat nulla elit ex consequat ipsum et Lorem consectetur et labore nisi minim officia nulla Lorem pariatur consequat officia proident non fugiat mollit commodo',
-      image: '/slide-1.jpg'
+      image: '/slide-1.jpeg'
     },
     {
       id: 2,
       title: 'Our Vision',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
-      image: '/slide-2.jpg'
+      image: '/slide-2.jpeg'
     },
     {
       id: 3,
